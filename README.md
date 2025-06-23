@@ -1,16 +1,16 @@
-# 🌧️ Rainfall Prediction Classifier — IBM Machine Learning Project (Coursera)
+# Rainfall Prediction Classifier — IBM Machine Learning Project (Coursera)
 
 This is a supervised machine learning project completed as part of the [IBM Machine Learning with Python course on Coursera](https://www.coursera.org/learn/machine-learning-with-python). The objective is to build a predictive model that can determine **whether it will rain today** based on historical weather data in the **Melbourne region**.
 
 ---
 
-## 📌 Problem Statement
+## Problem Statement
 
 Accurate rainfall prediction is essential for daily decision-making in agriculture, transportation, and city planning. This project focuses on creating a binary classifier that can **predict if it will rain today** using only weather features available **up to and including yesterday**, avoiding future data leakage.
 
 ---
 
-## 🎯 Project Objectives
+## Project Objectives
 
 - Explore and clean a real-world weather dataset
 - Perform feature engineering (e.g., extracting seasonality)
@@ -22,7 +22,7 @@ Accurate rainfall prediction is essential for daily decision-making in agricultu
 
 ---
 
-## 🗃️ Dataset Overview
+## Dataset Overview
 
 The dataset contains daily weather observations across various Australian locations from **2008 to 2017**. After filtering for only **Melbourne, MelbourneAirport, and Watsonia**, the following features were used:
 
@@ -39,15 +39,15 @@ The dataset contains daily weather observations across various Australian locati
 | Humidity9am/3pm| Relative humidity (%)                            |
 | Temp9am/3pm    | Temperature readings (°C)                        |
 | RainYesterday  | Whether it rained the previous day (Yes/No)     |
-| RainToday      | 🎯 Target: Whether it rained today (Yes/No)      |
+| RainToday      | Target: Whether it rained today (Yes/No)      |
 | Season         | Extracted from date (Summer, Autumn, etc.)      |
 | Location       | Categorical (only 3 cities used)                 |
 
 ---
 
-## 🧪 Machine Learning Workflow
+## Machine Learning Workflow
 
-### 🔧 Preprocessing
+### Preprocessing
 - Dropped rows with missing values
 - Renamed columns to prevent target leakage
 - Filtered for localized Melbourne region
@@ -55,13 +55,13 @@ The dataset contains daily weather observations across various Australian locati
 - One-hot encoded categorical features
 - Standard scaled numeric features
 
-### 📊 Class Balance
+### Class Balance
 
 - **RainToday = No**: 5,766 observations (~76%)
 - **RainToday = Yes**: 1,791 observations (~24%)
 - Stratified split used to maintain class proportions
 
-### 🧠 Models Trained
+### Models Trained
 
 1. **Random Forest Classifier**
 2. **Logistic Regression**
@@ -72,15 +72,15 @@ Both models were:
 
 ---
 
-## 📈 Results Summary
+## Results Summary
 
-### ✅ Random Forest Classifier
+### Random Forest Classifier
 
 - **Accuracy**: 84.5%
 - **True Positive Rate (Rain Recall)**: 50%
 - **Top Features**: Humidity3pm, Pressure3pm, Sunshine
 
-### ✅ Logistic Regression
+### Logistic Regression
 
 - **Accuracy**: 83.0%
 - **True Positive Rate (Rain Recall)**: 51%
@@ -88,7 +88,7 @@ Both models were:
 
 ---
 
-## 🔍 Feature Importances
+## Feature Importances
 
 Top features influencing rain prediction:
 
@@ -99,7 +99,7 @@ Top features influencing rain prediction:
 
 ---
 
-## 📌 Final Takeaways
+## Final Takeaways
 
 - **Random Forest** is more accurate and robust overall
 - **Logistic Regression** offers better interpretability and recall
@@ -108,7 +108,7 @@ Top features influencing rain prediction:
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - Apply SMOTE or class weights to handle class imbalance
 - Adjust decision thresholds to improve rainy-day recall
@@ -117,35 +117,35 @@ Top features influencing rain prediction:
 
 ---
 
-## 📁 File Structure
+## File Structure
 
 ```
-📦 Rainfall-Prediction-Classifier-IBM-ML-Coursera
+Rainfall-Prediction-Classifier-IBM-ML-Coursera
 ├── Rainfall_Prediction_Classifier.ipynb   # Final notebook
 ├── README.md                              # Project overview
 └── data/
-    └── weatherAUS.csv                     # Original dataset (if included)
+    └── weatherAUS.csv                     # Original dataset
 ```
 ---
 
-## 🧑‍🏫 Course Information
+## Course Information
 
 **Course**: [Machine Learning with Python](https://www.coursera.org/learn/machine-learning-with-python)  
 **Platform**: Coursera  
 **Provided by**: IBM  
 **Duration**: ~20 hours  
-**Certificate**: ✅ [View Certificate](#) *(Add your link here)*
+**Certificate**: [View Certificate](https://www.coursera.org/account/accomplishments/records/AL9M7Z86VTQG) 
 
 ---
 
-## 🧑‍💻 Author
+## Author
 
 **Zeeshan Akram**  
 BS Software Engineering | Data Science Enthusiast  
-[LinkedIn](https://www.linkedin.com/in/your-profile) | [GitHub](https://github.com/yourusername)
+[LinkedIn](https://www.linkedin.com/in/zeeshan-akram-572bbb34a/) | [GitHub](https://github.com/zeeshan-akram-ds)
 
 ---
 
-## 📜 License
+## License
 
 This project is part of an educational course and provided for learning purposes only.
